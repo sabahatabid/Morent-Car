@@ -14,7 +14,7 @@ async function getCar(slug : string): Promise< car | null > {
         name,
         slug,
         image,
-        price,
+        priceperday,
         image {
         asset ->{
         _id,
@@ -48,7 +48,7 @@ export default async function CarPage ({params}: CarPageProps){
                 {car?.name}
             </h1>
             <p className="text-2xl font-sans">
-                {car?.price}
+                {car?.priceperday}
             </p>
         </div>
        </div>
